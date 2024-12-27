@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import ChatView from "./views/ChatView.vue";
+</script>
+
 <template>
-  <h1>Fake Chat</h1>
+  <ChatView />
 </template>
