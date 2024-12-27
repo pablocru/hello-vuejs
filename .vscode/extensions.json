@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "htmlhint.vscode-htmlhint",
+    "naumovs.color-highlight",
+    "sdras.vue-vscode-snippets",
+    "stkb.rewrap",
+    "vitest.explorer",
+    "wayou.vscode-todo-highlight",
+  ]
+}
