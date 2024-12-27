@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js - Overview</title>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="./src/main.js"></script>
+    <link rel="stylesheet" href="../../packages/styles/src/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Vue.js - Overview</h1>
+    </header>
+
+    <section id="switchHeading">
+      <h2>{{heading}}</h2>
+
+      <button @click="switchHeading()">Switch heading</button>
+
+      <button @click="showHeadingList = !showHeadingList">
+        Toggle heading list
+      </button>
+
+      <div v-if="showHeadingList">
+        <p>Valid headings</p>
+        <ul>
+          <li v-for="validHeading in headingList">{{validHeading}}</li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Add heading</p>
+        <input
+          type="text"
+          placeholder="Vue.js is reactive"
+          @keypress.enter="addHeading()"
+          v-model="newHeading"
+        />
+      </div>
+    </section>
+  </body>
+</html>
