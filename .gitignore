@@ -1,0 +1,25 @@
+# Build output
+dist/
+dist-ssr/
+
+# Project dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+*.env
+*.env.*
+*.local
+
+# Testing files
+coverage/
+cypress/videos/
+cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
